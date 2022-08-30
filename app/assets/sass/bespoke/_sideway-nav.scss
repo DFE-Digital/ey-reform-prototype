@@ -1,0 +1,17 @@
+.govuk-sideways__nav{
+list-style: none;
+margin: 0;
+padding-left: 12px;
+}
+
+.govuk-sideways__item{
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+.govuk-sideways__item.is-active{
+    border-left:4px solid #212b32;
+    color:#212b32;
+    margin-left:-12px;
+    padding-left:8px
+}

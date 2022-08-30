@@ -2,32 +2,67 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Home – GOV.UK Prototype Kit
+  Home – Help for early years providers
 {% endblock %}
 
-{% block content %}
-
+{% block main %}
+<div class="govuk-width-container govuk-!-margin-top-6">
+  <div class="govuk-breadcrumbs govuk-!-padding-bottom-4">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/v1/home">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">EYFS areas of learning</a>
+    </li>
+   
+  </ol>
+</div>
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        Help for early years providers prototype
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
+
       
-
-
-      <h2 class="govuk-heading-m">Version 1</h2>
-
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>
-          <a href="">New site structure: Home page</a></li>
-         <li> <a href="">Parent topic hub</a></li>
-          <li><a href="">Child topic hub</a>
-        </li>
-       
-      </ul>
+      <h1 class="govuk-heading-l">
+        EYFS areas of learning
+      
+      </h1>
+      <p class="govuk-body">Find out more about each area of learning in the EYFS, including activities you can use in your setting. Plus, get advice and guidance on meeting the needs of all children.</p>
+      
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <img src="../../public/images/reading-fox.jpg" width="225px">
+      </div>
     </div>
   </div>
+    <div class="app-search-form-container govuk-!-margin-bottom-4" >
+      <div class="govuk-width-container">
+        <h2 class="govuk-heading-m">Topics</h2>
+        <ul class="govuk-list govuk-heading-m">
+          <li class="govuk-!-margin-bottom-2">
+            <a href="/v1/areas-of-learning/communication-language">Communication and language</a></li>
+           <li class="govuk-!-margin-bottom-2"> <a href="#">Physical development</a></li>
+            <li class="govuk-!-margin-bottom-2"><a href="#">Personal, social and emotional development</a>
+          </li>
+          <li class="govuk-!-margin-bottom-2"> <a href="#">Literacy</a></li>
+          <li class="govuk-!-margin-bottom-2"> <a href="#">Mathematics</a></li>
+          <li class="govuk-!-margin-bottom-2"> <a href="#">Understanding the world</a></li>
+          <li class="govuk-!-margin-bottom-2"> <a href="#">Expressive arts and design</a></li>
+          <li class="govuk-!-margin-bottom-2"> <a href="#">Meeting the needs of all children</a></li>
+        </ul>
+      </div>
+      </div>
+
+      <div class="govuk-width-container govuk-!-margin-bottom-6">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+      </div>
+
+
+
+    
+    </div>
+  </div>
+</div>
+
 
 {% endblock %}
