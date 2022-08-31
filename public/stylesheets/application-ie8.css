@@ -5969,6 +5969,7 @@ x:-moz-any-link {
   box-sizing: border-box;
   border-color: #1D70B8;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .govuk-card--contained {
@@ -6036,8 +6037,12 @@ x:-moz-any-link {
   width: 100%;
 }
 
+.govuk-card__nopadding {
+  padding: 0 !important;
+}
+
 .govuk-card__content {
-  padding-bottom: 0;
+  padding: 15px;
 }
 
 .govuk-card__content p {
@@ -6058,7 +6063,7 @@ x:-moz-any-link {
 }
 
 .govuk-card__height {
-  min-height: 300px;
+  min-height: 430px;
 }
 
 @media screen and (max-width: 1320px) {
