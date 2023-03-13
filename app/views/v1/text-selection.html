@@ -3,7 +3,7 @@
 {% block main %}
     {% include "includes/text-selection-buttons.html" %}
     <div id="textSelection"
-         class="content-letter {{ 'colour-distinction' if data['colour-distinction'] == 'true' }}">
+         class="colour-distinction">
         {% include "./home.html" %}
     </div>
     {{ super() }}
