@@ -8772,6 +8772,22 @@ x:-moz-any-link {
   padding-left: 8px;
 }
 
+.vote-button-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 20px;
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 2px solid #505a5f;
+  box-shadow: 0 -4px 0 rgba(80, 90, 95, 0.4);
+}
+
+.vote-button-container button {
+  margin-right: 15px !important;
+}
+
 .content-highlight {
   cursor: not-allowed;
   text-shadow: 0 0 4px white, 0 0 6px white;

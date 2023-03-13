@@ -1,0 +1,15 @@
+.vote-button-container {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-top: 20px;
+	width: 100%;
+	background-color: govuk-colour('white');
+	border-top: 2px solid #505a5f;
+	box-shadow: 0 -4px 0 rgba(#505a5f, 0.4);
+}
+
+.vote-button-container button{
+	margin-right:15px !important;
+}
