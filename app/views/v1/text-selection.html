@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block pageTitle %}Early Years Foundation - Text selection{% endblock %}
+{% block main %}
+    {% include "includes/text-selection-buttons.html" %}
+    <div id="textSelection"
+         class="content-letter {{ 'colour-distinction' if data['colour-distinction'] == 'true' }}">
+        {% include "./home.html" %}
+    </div>
+    {{ super() }}
+{% endblock %}
