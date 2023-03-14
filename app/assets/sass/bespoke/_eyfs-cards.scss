@@ -1,5 +1,5 @@
 .eyfs-card {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     background: #fff;
     border-bottom: 1px solid #1d70b8;
     position: relative;
@@ -8,7 +8,7 @@
 
 @media(min-width: 40.0625em) {
     .eyfs-card {
-        margin-bottom:25px
+        margin-bottom:10px;
     }
 }
 
@@ -66,7 +66,7 @@
 
 @media(max-width: 48.0525em) {
     .eyfs-card-group {
-        margin-bottom:30px
+        margin-bottom:15px
     }
 }
 
@@ -77,7 +77,7 @@
 }
 
 .eyfs-card-group__item .eyfs-card {
-    margin-bottom: 25px
+    margin-bottom: 15px
 }
 
 @media(max-width: 48.0525em) {
