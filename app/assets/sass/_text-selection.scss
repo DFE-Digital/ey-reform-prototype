@@ -12,7 +12,7 @@
 }
 
 .content-highlight-maybe {
-  background-color: rgba(govuk-colour('purple'), 0.25);
+  background-color: rgba(govuk-colour('mid-grey'), 0.25);
 }
 
 .colour-distinction {
@@ -42,11 +42,11 @@
 
   .content-highlight-maybe {
     background-image: linear-gradient(
-        rgba(govuk-colour('purple'), 0.1),
-        rgba(govuk-colour('purple'), 0.1)
+        rgba(govuk-colour('mid-grey'), 0.1),
+        rgba(govuk-colour('mid-grey'), 0.1)
       ),
       url("data:image/svg+xml,%3Csvg width='46' height='46' viewBox='0 0 46 46' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='46' height='46' fill='white'/%3E%3Cpath d='M12 4C9.243 4 7 6.243 7 9h2c0-1.654 1.346-3 3-3s3 1.346 3 3c0 1.069-.454 1.465-1.481 2.255-.382.294-.813.626-1.226 1.038C10.981 13.604 10.995 14.897 11 15v2h2v-2.009c0-.024.023-.601.707-1.284.32-.32.682-.598 1.031-.867C15.798 12.024 17 11.1 17 9c0-2.757-2.243-5-5-5zm-1 14h2v2h-2z'/%3E%3C/svg%3E");
-    border-bottom: 2px dashed rgba(govuk-colour('purple'), 0.75);
+    border-bottom: 2px dashed rgba(govuk-colour('mid-grey'), 0.75);
   }
 
   .button--good {

@@ -6551,6 +6551,63 @@ div.govuk-header__content button.govuk-header__menu-button {
   text-decoration: none;
 }
 
+.print-link {
+  display: none;
+}
+
+.print-link.print-link--show-without-js {
+  display: block;
+}
+
+.js-enabled .print-link {
+  display: block;
+}
+
+.print-link__link,
+.print-link__button {
+  background: url(/public/images/print-icon.png) no-repeat 10px 50%;
+  background-size: 16px 18px;
+  padding: 10px 10px 10px 36px;
+  text-decoration: none;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .print-link__link,
+.print-link__button {
+    background-image: url(/public/images/print-icon.png);
+  }
+}
+.print-link__link:hover,
+.print-link__button:hover {
+  background-color: #f3f2f1;
+}
+
+.print-link__link {
+  box-shadow: inset 0 0 0 1px #b1b4b6;
+}
+
+.print-link__link:focus {
+  border: 0;
+  box-shadow: 0 3px #0b0c0c;
+}
+
+.print-link__button {
+  border: 1px solid #b1b4b6;
+  color: #1d70b8;
+  cursor: pointer;
+  margin: 0;
+}
+
+.print-link__button:focus {
+  outline: 3px solid transparent;
+  color: #0b0c0c;
+  background-color: #fd0;
+  box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
+  text-decoration: none;
+  background-color: #fd0;
+  border-color: transparent;
+}
+
 .content-highlight {
   cursor: not-allowed;
   text-shadow: 0 0 4px white, 0 0 6px white;
@@ -6565,7 +6622,7 @@ div.govuk-header__content button.govuk-header__menu-button {
 }
 
 .content-highlight-maybe {
-  background-color: rgba(76, 44, 146, 0.25);
+  background-color: rgba(177, 180, 182, 0.25);
 }
 
 .colour-distinction .content-highlight {
@@ -6583,8 +6640,8 @@ div.govuk-header__content button.govuk-header__menu-button {
   border-bottom: 2px dashed rgba(244, 119, 56, 0.75);
 }
 .colour-distinction .content-highlight-maybe {
-  background-image: linear-gradient(rgba(76, 44, 146, 0.1), rgba(76, 44, 146, 0.1)), url("data:image/svg+xml,%3Csvg width='46' height='46' viewBox='0 0 46 46' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='46' height='46' fill='white'/%3E%3Cpath d='M12 4C9.243 4 7 6.243 7 9h2c0-1.654 1.346-3 3-3s3 1.346 3 3c0 1.069-.454 1.465-1.481 2.255-.382.294-.813.626-1.226 1.038C10.981 13.604 10.995 14.897 11 15v2h2v-2.009c0-.024.023-.601.707-1.284.32-.32.682-.598 1.031-.867C15.798 12.024 17 11.1 17 9c0-2.757-2.243-5-5-5zm-1 14h2v2h-2z'/%3E%3C/svg%3E");
-  border-bottom: 2px dashed rgba(76, 44, 146, 0.75);
+  background-image: linear-gradient(rgba(177, 180, 182, 0.1), rgba(177, 180, 182, 0.1)), url("data:image/svg+xml,%3Csvg width='46' height='46' viewBox='0 0 46 46' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='46' height='46' fill='white'/%3E%3Cpath d='M12 4C9.243 4 7 6.243 7 9h2c0-1.654 1.346-3 3-3s3 1.346 3 3c0 1.069-.454 1.465-1.481 2.255-.382.294-.813.626-1.226 1.038C10.981 13.604 10.995 14.897 11 15v2h2v-2.009c0-.024.023-.601.707-1.284.32-.32.682-.598 1.031-.867C15.798 12.024 17 11.1 17 9c0-2.757-2.243-5-5-5zm-1 14h2v2h-2z'/%3E%3C/svg%3E");
+  border-bottom: 2px dashed rgba(177, 180, 182, 0.75);
 }
 .colour-distinction .button--good {
   background-color: #5694ca;
