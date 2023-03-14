@@ -5913,7 +5913,6 @@ x:-moz-any-link {
 
 .app-search-form-container .govuk-label,
 .app-search-form-container .govuk-hint,
-.app-search-form-container .govuk-link,
 .app-search-form-container h1 {
   color: #141414;
 }
@@ -6433,6 +6432,123 @@ div.govuk-header__content button.govuk-header__menu-button {
 .app-mobile-nav__subnav-item--current {
   padding-left: 16px;
   border-left: 4px solid #1d70b8;
+}
+
+.eyfs-card {
+  margin-bottom: 15px;
+  background: #fff;
+  border-bottom: 1px solid #1d70b8;
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 40.0625em) {
+  .eyfs-card {
+    margin-bottom: 25px;
+  }
+}
+.eyfs-card__content {
+  padding: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 40.0625em) {
+  .eyfs-card__content {
+    padding: 25px;
+  }
+}
+.eyfs-card__description, .eyfs-card__heading, .eyfs-card__metadata {
+  margin-bottom: 15px;
+}
+
+.eyfs-card--clickable {
+  border-bottom-width: 3px;
+}
+
+.eyfs-card--clickable:active, .eyfs-card--clickable:hover {
+  cursor: pointer;
+}
+
+.eyfs-card--clickable:active .eyfs-card__heading a, .eyfs-card--clickable:active .eyfs-card__link, .eyfs-card--clickable:hover .eyfs-card__heading a, .eyfs-card--clickable:hover .eyfs-card__link {
+  color: #003078;
+  text-decoration: none;
+}
+
+.eyfs-card--clickable:active .eyfs-card__heading a:focus, .eyfs-card--clickable:active .eyfs-card__link:focus, .eyfs-card--clickable:hover .eyfs-card__heading a:focus, .eyfs-card--clickable:hover .eyfs-card__link:focus {
+  color: #fd0;
+}
+
+.eyfs-card--clickable:hover {
+  border-color: #003078;
+}
+
+.eyfs-card--clickable:active {
+  border-color: #003078;
+  border-bottom-width: 0;
+  bottom: -1px;
+}
+
+.eyfs-card-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+@media (max-width: 48.0525em) {
+  .eyfs-card-group {
+    margin-bottom: 30px;
+  }
+}
+.eyfs-card-group__item {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.eyfs-card-group__item .eyfs-card {
+  margin-bottom: 25px;
+}
+
+@media (max-width: 48.0525em) {
+  .eyfs-card-group__item .eyfs-card {
+    margin-bottom: 15px;
+  }
+}
+.eyfs-card-group__item .eyfs-card--feature {
+  margin-top: 0;
+}
+
+.eyfs-card-group--list .eyfs-card-group__item:not(:last-child) .eyfs-card {
+  border-bottom-width: 0;
+  margin-bottom: 0;
+}
+
+.eyfs-card--icon {
+  background-position: right 8px top 50%;
+  background-repeat: no-repeat;
+  min-width: 30px;
+  max-width: 30px;
+}
+
+@media (max-width: 48.0525em) {
+  .eyfs-card--icon {
+    background-position: right 4px top 50%;
+  }
+}
+.eyfs-card--link a {
+  text-decoration: none;
+}
+
+.eyfs-card--link.eyfs-card--clickable:active a, .eyfs-card--link.eyfs-card--clickable:active a:hover, .eyfs-card--link.eyfs-card--clickable:hover a, .eyfs-card--link.eyfs-card--clickable:hover a:hover {
+  text-decoration: underline;
+}
+
+.eyfs-card--link.eyfs-card--clickable:active a:focus, .eyfs-card--link.eyfs-card--clickable:hover a:focus {
+  text-decoration: none;
 }
 
 .content-highlight {
