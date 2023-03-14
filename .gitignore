@@ -4,3 +4,4 @@ lib/extensions/_extensions.scss
 .start.pid
 .port.tmp
 node_modules/
+public
